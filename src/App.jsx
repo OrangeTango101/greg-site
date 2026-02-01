@@ -8,13 +8,13 @@ export default function App() {
   return (
     <Routes>
       <Route 
-        path="/" 
+        path="/greg-site/" 
         element={
             <Home />
         } 
       />
       <Route 
-        path="/about" 
+        path="/greg-site/about" 
         element={
             <About />
         } 
