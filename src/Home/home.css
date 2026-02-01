@@ -67,13 +67,11 @@ main {
     background:
         linear-gradient(135deg, rgb(12, 15, 34, 0.4) 40%, rgb(12, 15, 34, 0) 100%),
         linear-gradient(to top, rgb(12, 15, 34) 2%, transparent 15%);
-
-
 }
 
 .title-img-frame > img {
-    width: 150vw;
-    transform: translate(-150px, 0px) rotate(0deg);
+    height: 120vh;
+    transform: translate(-15%, 0px) rotate(0deg);
     mix-blend-mode: lighten;
     object-fit: cover;
     z-index: -100;
@@ -84,7 +82,7 @@ main {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-150vw);
+    transform: translateX(-269.7318vh);
   }
 }
 
@@ -121,14 +119,14 @@ article {
 }
 
 .article-info > h2 {
-    font-size: var(--title-size);
+    font-size: clamp(3rem, 5vw, var(--title-size));
     color: var(--title);
-    line-height: 80px;
+    line-height: clamp(3.5rem, 1vw, var(--title-size));
     margin: 0px 0px 0px 0px;
 }
 
 .article-info > p {
-    font-size: var(--text-size);
+    font-size: clamp(10px, 4vw, var(--text-size));
     color: var(--text);
     margin: 20px 0px 10px 0px;
 }
@@ -156,28 +154,24 @@ article {
 .article-back-img {
     position: absolute;
     transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
     z-index: -1;
 }
 
 #article-backImg-author {
     height: 850px;
-    left: 50%;
-    top: 50%;
     filter: brightness(50%) opacity(0.8);
     mix-blend-mode: screen;
 }
 
 #article-backImg-inspiration {
     height: 900px;
-    left: 50%;
-    top: 50%;
     filter: brightness(100%)
 }
 
 #article-backImg-book {
     height: 1000px;
-    left: 50%;
-    top: 50%;
     filter: brightness(70%);
 }
 
@@ -246,9 +240,35 @@ article {
         justify-content: center !important;
         align-items: center !important;
     }
-    .main-backImg {
-        top: 70%;
+
+    .article-img-frame, .article-img-main {
+        width: 80vw !important;
+        max-width: 600px;
+        height: auto !important;
     }
+
+    .article-back-img {
+        width: 130vw !important;
+        max-width: 1000px;
+        height: auto !important;
+    }
+
+    .main-backImg {
+        height: 15%;
+        width: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .title-img-title {
+        display: none;
+    }
+
+    .title-img-frame > img {
+        transform: translate(-40%, 0px) rotate(0deg);
+
+    }
+
 }
 
 

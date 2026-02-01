@@ -6,7 +6,7 @@ export default function Nav() {
         <nav>
             <div className="nav-title">
                 <Link className="nav-content-link" to="/greg-site/">
-                    <h2>An Artist's Reaction To The Sciences</h2>
+                    An Artist's Reaction To The Sciences
                 </Link>
             </div>
             <div className="nav-content">

@@ -23,7 +23,7 @@ body {
     --shadow: 0 4px 20px rgba(184, 134, 11, 0.1);
     --dark-shadow: 0 8px 24px rgba(184, 134, 11, 0.12);
     --text-size: 1.25rem;
-    --title-size: 65px;
+    --title-size: 4.5rem;
 }
 
 .fade-in {

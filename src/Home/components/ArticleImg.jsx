@@ -22,6 +22,7 @@ export default function ArticleImg({data}) {
         
             <div className="article-img-frame">
                 <img 
+                    className="article-img-main"
                     style={{height: data.height}} 
                     src={(import.meta.env.BASE_URL + data.src).replace(/\/+/g, '/')} 
                 />

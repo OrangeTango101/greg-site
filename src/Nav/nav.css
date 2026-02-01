@@ -4,6 +4,7 @@ nav {
     left: 0px;
     top: 0px;
     display: flex;
+    gap: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -29,14 +30,18 @@ nav::after {
     );
 }
 
-.nav-title h2 {
-    color: white;
-}
+.nav-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-.nav-title > h2 {
+}
+.nav-title > * {
     color: var(--title);
-    font-size: 30px;
-    margin: -15px 0px 10px 0px;
+    font-size: clamp(10px, 5vw, 30px);
+    font-weight: 700;
+    text-align: center;
 }
 
 .nav-content {
@@ -50,7 +55,8 @@ nav::after {
 }
 
 .nav-content * {
-    color: var(--sub)
+    color: var(--sub);
+    font-size: clamp(10px, 2vw, 15px);
 }
 
 .nav-content-link {
