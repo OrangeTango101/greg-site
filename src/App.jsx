@@ -1,0 +1,26 @@
+import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Home from "./Home/home.jsx"
+import About from "./About/About.jsx"
+
+export default function App() {
+
+  return (
+    <Routes>
+      <Route 
+        path="/" 
+        element={
+            <Home />
+        } 
+      />
+      <Route 
+        path="/about" 
+        element={
+            <About />
+        } 
+      />
+    </Routes>
+
+  )
+}
+
