@@ -35,7 +35,7 @@ main {
 }
 
 .title-img-title > h1 {
-    font-size: clamp(48px, 8vw, 100px);
+    font-size: clamp(30px, 8vw, 100px);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin: 0px;
     line-height: 1.1;
@@ -260,9 +260,6 @@ article {
 }
 
 @media (max-width: 550px) {
-    .title-img-title {
-        display: none;
-    }
 
     .title-img-frame > img {
         transform: translate(-40%, 0px) rotate(0deg);
