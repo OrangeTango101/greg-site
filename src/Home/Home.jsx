@@ -30,7 +30,7 @@ export default function Home() {
                     link="https://google.com"
                     height="600px"
                 />
-                <img className="main-backImg" src="src/assets/greg-art15.png" />
+                <img className="main-backImg" src={(import.meta.env.BASE_URL + "/assets/greg-art15.png").replace(/\/+/g, '/')} />
                 <Article 
                     order={false} 
                     title={

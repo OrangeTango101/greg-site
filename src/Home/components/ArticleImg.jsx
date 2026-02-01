@@ -8,7 +8,7 @@ export default function ArticleImg({data}) {
             <img 
                 className="article-back-img"
                 id={data.id}
-                src={data.src}
+                src={(import.meta.env.BASE_URL + data.src).replace(/\/+/g, '/')}
             />
         )
     })
@@ -23,7 +23,7 @@ export default function ArticleImg({data}) {
             <div className="article-img-frame">
                 <img 
                     style={{height: data.height}} 
-                    src={data.src} 
+                    src={(import.meta.env.BASE_URL + data.src).replace(/\/+/g, '/')} 
                 />
                 {backImages != null && backImages}
             </div>

@@ -14,7 +14,8 @@ export default function About() {
                     className={`about-content fade-in ${visible ? "visible" : ""}`}
                 >
                     <div className="about-image">
-                        <img src="src/assets/profile_photo.JPG" />
+
+                        <img src={(import.meta.env.BASE_URL + "assets/profile_photo.JPG").replace(/\/+/g, '/')} />
                     </div>
                     <div className="about-description">
                         <h1>Greg Johnsn is an Artist and Scholar</h1>
