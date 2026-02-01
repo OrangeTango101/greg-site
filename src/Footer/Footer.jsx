@@ -8,9 +8,9 @@ export default function Footer() {
                     <h3>Greg Johnson</h3>
                     <div className="footer-contact-images">
                         
-                        <img src={(import.meta.env.BASE_URL + "assets/facebook-logo.png").replace(/\/+/g, '/')} />
-                        <img src={(import.meta.env.BASE_URL + "assets/instagram-logo.png").replace(/\/+/g, '/')} />
-                        <img src={(import.meta.env.BASE_URL + "assets/twitter-logo.png").replace(/\/+/g, '/')} />
+                        <img src={(import.meta.env.BASE_URL + "/assets/facebook-logo.png").replace(/\/+/g, '/')} />
+                        <img src={(import.meta.env.BASE_URL + "/assets/instagram-logo.png").replace(/\/+/g, '/')} />
+                        <img src={(import.meta.env.BASE_URL + "/assets/twitter-logo.png").replace(/\/+/g, '/')} />
                     </div>
                 </div>
 

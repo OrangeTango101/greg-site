@@ -15,7 +15,7 @@ export default function About() {
                 >
                     <div className="about-image">
 
-                        <img src={(import.meta.env.BASE_URL + "assets/profile_photo.JPG").replace(/\/+/g, '/')} />
+                        <img src={(import.meta.env.BASE_URL + "/assets/profile_photo.JPG").replace(/\/+/g, '/')} />
                     </div>
                     <div className="about-description">
                         <h1>Greg Johnsn is an Artist and Scholar</h1>

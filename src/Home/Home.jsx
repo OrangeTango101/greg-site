@@ -19,11 +19,11 @@ export default function Home() {
                             — Pine Tree Press
                         </>
                     }
-                    src="src/assets/71l40nn8R6L._SL1293_.jpg"
+                    src="/assets/71l40nn8R6L._SL1293_.jpg"
                     backImages={[
                         {
                             id: "article-backImg-book",
-                            src: "src/assets/book-texture.png"
+                            src: "/assets/book-texture.png"
                         }
                     ]}
                     buttonTxt="Buy Now"
@@ -46,11 +46,11 @@ export default function Home() {
                             — Dr. Zehlia Babaci-Wilhite 
                         </>
                     }
-                    src="src/assets/greg-art7.jpg"
+                    src="/assets/greg-art7.jpg"
                     backImages={[
                         {
                             id: "article-backImg-inspiration",
-                            src: "src/assets/greg-art7-texture.png"
+                            src: "/assets/greg-art7-texture.png"
                         }
                     ]}
                     height="600px"
@@ -59,11 +59,11 @@ export default function Home() {
                     order={true} 
                     title="Greg Johnson" 
                     info="Greg Johnson is an artist and researcher from Berkeley, California. Trained in art history and fine arts, he has exhibited his work in galleries and contributed to STEAM anthologies. His passion lies in uniting art and science to spark curiosity and wonder." 
-                    src="src/assets/profile_photo.JPG"
+                    src="/assets/profile_photo.JPG"
                     backImages={[
                         {
                             id: "article-backImg-author",
-                            src: "src/assets/profile_photo-texture.png"
+                            src: "/assets/profile_photo-texture.png"
                         }
                     ]}
                     buttonTxt="Read More"
