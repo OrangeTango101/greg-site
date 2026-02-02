@@ -18,7 +18,7 @@ export default function About() {
                         <img src={(import.meta.env.BASE_URL + "/assets/profile_photo.JPG").replace(/\/+/g, '/')} />
                     </div>
                     <div className="about-description">
-                        <h1>Greg Johnsn is an Artist and Scholar</h1>
+                        <h1>Greg Johnson is an Artist and Scholar</h1>
                         <p>
                             Greg Johnson is an artist and researcher from Berkeley, California. Trained in art history and fine arts, he has exhibited his work in galleries and contributed to STEAM anthologies. He earned his degree in Art History from the college of Wooster in Wooster, Ohio, and continued his studies at the California College of Arts and Crafts in Oakland, California; the Vancouver Art Institute; and the Madison Commercial Art School. 
                             <br />
