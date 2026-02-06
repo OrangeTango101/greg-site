@@ -181,7 +181,7 @@ article {
     position: absolute;
     z-index: -100;
     left: -20%;
-    top: 60%;
+    top: 55%;
     width: 120%;
     object-fit: cover;
     transform: translateY(0);
@@ -199,23 +199,6 @@ article {
         linear-gradient(to bottom, transparent 0%, black 15%),
         linear-gradient(to left, transparent 0%, black 70%);
     mask-composite: intersect;
-}
-
-@supports (animation-timeline: scroll()) {
-  .main-backImg {
-    animation: parallax linear;
-    animation-timeline: scroll(root);
-    
-  }
-
-  @keyframes parallax {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(40%);
-    }
-  }
 }
 
 

@@ -1,9 +1,15 @@
 import "./home.css"
+import { useRef } from "react"
 import TitleImg from "./components/TitleImg"
 import Article from "./components/Article"
 import Nav from "../Nav/Nav.jsx"
 import Footer from "../Footer/Footer.jsx"
+import useParallax from "../components/useParallax.jsx"
+
 export default function Home() {
+    const backImgRef = useRef(null)
+    useParallax(backImgRef, 0.15)
+
     return (
         <>
             <Nav />
@@ -30,7 +36,11 @@ export default function Home() {
                     link="https://google.com"
                     height="600px"
                 />
-                <img className="main-backImg" src={(import.meta.env.BASE_URL + "/assets/greg-art15.png").replace(/\/+/g, '/')} />
+                <img 
+                    ref={backImgRef}
+                    className="main-backImg" 
+                    src={(import.meta.env.BASE_URL + "/assets/greg-art15.png").replace(/\/+/g, '/')} 
+                />
                 <Article 
                     order={false} 
                     title={
