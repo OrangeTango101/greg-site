@@ -56,8 +56,7 @@ main {
     max-height: fit-content;
     height: 85vh;
     overflow: hidden;
-
-    animation: scroll-left 180s linear infinite;
+    animation: scroll-left 240s linear infinite;
 }   
 
 .title-img-frame-overlay {
@@ -139,8 +138,15 @@ article {
     background: none;
     border: white 1px solid;
     margin: 30px 0px 0px 0px;
-    padding: 30px
+    padding: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+    
 }
+
+button:hover {
+    background: rgba(12, 25, 44, 0.8);
+}   
 
 .article-img {
     display: flex;
@@ -159,6 +165,7 @@ article {
     left: 50%;
     top: 50%;
     z-index: -1;
+    pointer-events: none;
 }
 
 #article-backImg-author {
@@ -202,10 +209,27 @@ article {
 
 
 @media (max-width: 1024px) {
+
+    @keyframes scroll-left-small {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-179.82120051vh);
+        }
+    }
+
+    .title-img-frame {
+        animation-name: scroll-left-small;
+    }
+
+    .title-img-frame > img {   
+        height: 80vh;
+    }
+
     article {
         flex-direction: column;
     }
-
     .reverse {
         flex-direction: column-reverse;
     }
@@ -243,9 +267,24 @@ article {
     }
 }
 
-@media (max-width: 900px) {
-    .title-img-frame > img {
-        transform: translate(-40%, 0px) rotate(0deg);
+@media (max-width: 600px) {
+
+    @keyframes scroll-left-small {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-134.86590038vh);
+        }
+    }
+    
+    .title-img-frame {
+        animation-name: scroll-left-small;
+    }
+
+    .title-img-frame > img {   
+        transform: translate(-20%, 0px) rotate(0deg);
+        height: 60vh;
     }
 }
 
