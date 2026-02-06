@@ -8,7 +8,7 @@ import useParallax from "../components/useParallax.jsx"
 
 export default function Home() {
     const backImgRef = useRef(null)
-    useParallax(backImgRef, 0.15)
+    useParallax(backImgRef, 0.08, 0.1)
 
     return (
         <>
