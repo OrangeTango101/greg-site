@@ -132,7 +132,7 @@ article {
     margin: 20px 0px 10px 0px;
 }
 
-.article-info > button {
+.article-info button {
     color: white;
     font-size: var(--text);
     background: none;
@@ -145,7 +145,7 @@ article {
 }
 
 button:hover {
-    background: rgba(12, 25, 44, 0.8);
+    background: rgba(22, 35, 64, 0.8);
 }   
 
 .article-img {
@@ -169,8 +169,10 @@ button:hover {
 }
 
 #article-backImg-author {
-    height: 850px;
-    filter: brightness(50%) opacity(0.8);
+    height: 1100px;
+    left: 47%;
+    top: 51%;
+    filter: brightness(70%) opacity(0.8);
     mix-blend-mode: screen;
 }
 
@@ -261,6 +263,10 @@ button:hover {
         height: auto !important;
     }
 
+    #article-backImg-author {
+        max-width: 1100px;
+    }
+
     .main-backImg {
         height: 15%;
         width: auto;
@@ -268,7 +274,6 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-
     @keyframes scroll-left-small {
         from {
             transform: translateX(0);

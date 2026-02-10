@@ -33,7 +33,7 @@ export default function Home() {
                         }
                     ]}
                     buttonTxt="Buy Now"
-                    link="https://google.com"
+                    link="https://www.amazon.com/-/he/Greg-Johnson/dp/B0G9KXMJK1"
                     height="600px"
                 />
                 <img 
@@ -69,7 +69,7 @@ export default function Home() {
                     order={true} 
                     title="Greg Johnson" 
                     info="Greg Johnson is an artist and researcher from Berkeley, California. Trained in art history and fine arts, he has exhibited his work in galleries and contributed to STEAM anthologies. His passion lies in uniting art and science to spark curiosity and wonder." 
-                    src="/assets/profile_photo.JPG"
+                    src="/assets/profile_photo.jpg  "
                     backImages={[
                         {
                             id: "article-backImg-author",
@@ -77,8 +77,8 @@ export default function Home() {
                         }
                     ]}
                     buttonTxt="Read More"
-                    link="https://google.com"
-                    height="500px"
+                    link="/greg-site/about"
+                    height="600px"
                 />
 
             </main>

@@ -13,9 +13,15 @@ export default function ArticleInfo({ data }) {
                 "--delay": "1.5s" 
             }}
         >
-            <h2>{data.title}</h2>
+            <h2>{data.title}</h2>   
             <p>{data.info}</p>
-            { data.link != null && <button>{data.buttonTxt}</button> }
+            { data.link != null && 
+                <a href={data.link}>
+                    <button>
+                        {data.buttonTxt}
+                    </button> 
+                </a>
+            }
         </div>
 
     )

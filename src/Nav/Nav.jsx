@@ -10,7 +10,7 @@ export default function Nav() {
                 </Link>
             </div>
             <div className="nav-content">
-                <a className="nav-content-link">Buy The Book</a> 
+                <a href="https://www.amazon.com/-/he/Greg-Johnson/dp/B0G9KXMJK1" className="nav-content-link">Buy The Book</a> 
                 <Link className="nav-content-link" to="/greg-site/about">About The Author</Link>
             </div>
         </nav>

@@ -7,7 +7,6 @@ export default function Footer() {
                 <div className="footer-section footer-contact">
                     <h3>Greg Johnson</h3>
                     <div className="footer-contact-images">
-                        
                         <img src={(import.meta.env.BASE_URL + "/assets/facebook-logo.png").replace(/\/+/g, '/')} />
                         <img src={(import.meta.env.BASE_URL + "/assets/instagram-logo.png").replace(/\/+/g, '/')} />
                         <img src={(import.meta.env.BASE_URL + "/assets/twitter-logo.png").replace(/\/+/g, '/')} />
@@ -27,9 +26,8 @@ export default function Footer() {
                         <h3>Quick Links</h3>
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li><a href="about">About Greg Johnson</a></li>
-                            <li><a href="#projects">Buy Now</a></li>
-                            
+                            <li><a href="/greg-site/about">About Greg Johnson</a></li>
+                            <li><a href="https://www.amazon.com/-/he/Greg-Johnson/dp/B0G9KXMJK1">Buy Now</a></li>
                         </ul>
                     </div>
                 </div>
