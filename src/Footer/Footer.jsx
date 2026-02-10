@@ -27,7 +27,7 @@ export default function Footer() {
                         <h3>Quick Links</h3>
                         <ul>
                         
-                            <li><a onClick={() => window.scrollTo(0, 0)}>Home</a></li>
+                            <li><Link className="nav-content-link" to="/greg-site">Home</Link></li>
                             <li><Link className="nav-content-link" to="/greg-site/about">About Greg Johnson</Link></li>
                             <li><a href="https://www.amazon.com/-/he/Greg-Johnson/dp/B0G9KXMJK1">Buy Now</a></li>
                         </ul>
