@@ -57,6 +57,7 @@ footer {
     font-size: 1.1rem;
     color: var(--sub);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .footer-contact {

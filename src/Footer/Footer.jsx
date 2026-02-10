@@ -1,4 +1,5 @@
 import "./footer.css"  
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -25,8 +26,9 @@ export default function Footer() {
                     <div>
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/greg-site/about">About Greg Johnson</a></li>
+                        
+                            <li><a onClick={() => window.scrollTo(0, 0)}>Home</a></li>
+                            <li><Link className="nav-content-link" to="/greg-site/about">About Greg Johnson</Link></li>
                             <li><a href="https://www.amazon.com/-/he/Greg-Johnson/dp/B0G9KXMJK1">Buy Now</a></li>
                         </ul>
                     </div>
