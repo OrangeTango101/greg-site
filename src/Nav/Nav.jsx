@@ -5,13 +5,13 @@ export default function Nav() {
     return (
         <nav>
             <div className="nav-title">
-                <Link className="nav-content-link" to="/greg-site/">
+                <Link className="nav-content-link" to="/">
                     An Artist's Reaction To The Sciences
                 </Link>
             </div>
             <div className="nav-content">
                 <a href="https://www.amazon.com/-/he/Greg-Johnson/dp/B0G9KXMJK1" className="nav-content-link">Buy The Book</a> 
-                <Link className="nav-content-link" to="/greg-site/about">About The Author</Link>
+                <Link className="nav-content-link" to="/about">About The Author</Link>
             </div>
         </nav>
     )

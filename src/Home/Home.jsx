@@ -77,7 +77,7 @@ export default function Home() {
                         }
                     ]}
                     buttonTxt="Read More"
-                    link="/greg-site/about"
+                    link="/about"
                     height="600px"
                 />
 
